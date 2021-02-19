@@ -16,7 +16,7 @@ firebase_admin.initialize_app(cred, {
     'projectId': "trentiemeciel",
 })
 
-logging.basicConfig(level=os.environ.get("LOGGING_LEVEL", "INFO"))
+logging.basicConfig(level=os.environ.get("LOGGING_LEVEL", "DEBUG"))
 
 log = logging.getLogger(__name__)
 db = firestore.client()
@@ -36,9 +36,9 @@ def from_firestore(event, context):
     resource_string = context.resource
 
     # print out the resource string that triggered the function
-    print(f"Function triggered by change to: {resource_string}.")
+    log.info(f"Function triggered by change to: {resource_string}.")
     # now print out the entire event object
-    print(str(event))
+    log.debug(str(event))
 
     trigger_on_update_reservation_request(resource_string)
 
@@ -47,7 +47,7 @@ def trigger_on_update_reservation_request(doc_path):
     request_ref = db.document(doc_path)
     pax_ref = request_ref.parent.parent
     pax_doc, request_doc = pax_ref.get(), request_ref.get()
-    assert pax_doc.exists and request_doc.exists
+    assert pax_doc.exists and request_doc.exiKsts
 
     request_plus_id = request_doc.to_dict()
     request_plus_id.update({"id": request_doc.id})
