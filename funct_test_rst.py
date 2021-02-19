@@ -1,3 +1,5 @@
+from datetime import date
+
 from dotmap import DotMap
 
 from rst import generate_confirmed_reservation_html_text
@@ -8,10 +10,11 @@ if __name__ == "__main__":
     }, _dynamic=False)
     request = DotMap({
         "id": "my_id",
-        "created": "created",
+        "created": date(2021, 2, 6),
         "kind": "COLIVING",
-        "arrival_date": "1",
-        "departure_date": "2",
+        "arrival_date": date(2021, 2, 19),
+        "departure_date": date(2021, 3, 1),
+        "number_of_nights": 3,
     }, _dynamic=False)
 
     html = generate_confirmed_reservation_html_text(pax, request)

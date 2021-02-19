@@ -1,5 +1,5 @@
+from babel.dates import format_date
 from docutils.core import publish_string
-from dotmap import DotMap
 from jinja2 import Environment, select_autoescape
 from jinja2 import FileSystemLoader
 
@@ -8,10 +8,15 @@ settings_overrides = {
 }
 
 
+def date_format(d, fmt="medium"):
+    return format_date(d, locale='fr', format=fmt)
+
+
 env = Environment(
     loader=FileSystemLoader("res"),
-    autoescape=select_autoescape(['html', 'xml'])
+    autoescape=select_autoescape(['html', 'xml']),
 )
+env.filters["dateformat"] = date_format
 
 
 def generate_confirmed_reservation_title(pax, request):

@@ -8,13 +8,14 @@ Merci pour votre réservation
 Veuillez trouver ci-dessous tous les détails de votre réservation :
 
 * Nom : {{ pax.name }}
-* Date d'arrivée : {{ request.arrival_date }}
-* Date de départ : {{ request.departure_date }}
-* Type : {{ request.kind}}
+* Date d'arrivée : {{ request.arrival_date|dateformat }}
+{% if request.kind == "COLIVING" %}
+* Date de départ : {{ request.departure_date|dateformat }}
+* Nombre de nuit(s) : {{ request.number_of_nights }}
+{% endif %}
+* Type : {{ request.kind }}
 
-
-* Numéro de réservation : {{ request.id }}
-* Date de réservation : {{ request.created }}
+* Date de réservation : {{ request.created|dateformat }}
 
 
 Information logistique
@@ -33,8 +34,8 @@ Left door with a rainbow.
 ========================================================================================================================
 
 We have an private Facebook group, you can ask to join using this link:
-
 https://www.facebook.com/groups/au30emeciel
+
 
 📡 Wifi
 ========================================================================================================================

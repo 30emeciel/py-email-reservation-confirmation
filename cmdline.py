@@ -1,4 +1,5 @@
 import logging
+
 from dotmap import DotMap
 
 log = logging.getLogger(__name__)

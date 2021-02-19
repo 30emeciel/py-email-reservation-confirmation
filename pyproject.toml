@@ -11,6 +11,7 @@ firebase-admin = "^4.4.0"
 sendgrid = "^6.6.0"
 Jinja2 = "^2.11.3"
 docutils = { path = "libs/docutils_0.17b2.tar.gz" }
+Babel = "^2.9.0"
 
 [tool.poetry.dev-dependencies]
 python-dotenv = "^0.15.0"

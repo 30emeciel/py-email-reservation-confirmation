@@ -1,1 +1,1 @@
-Confirmation de réservation {{ request.arrival_date }}
+Confirmation de ta réservation au Coliving du 30ème Ciel {{ request.arrival_date|dateformat }}
