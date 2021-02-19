@@ -47,7 +47,7 @@ def trigger_on_update_reservation_request(doc_path):
     request_ref = db.document(doc_path)
     pax_ref = request_ref.parent.parent
     pax_doc, request_doc = pax_ref.get(), request_ref.get()
-    assert pax_doc.exists and request_doc.exiKsts
+    assert pax_doc.exists and request_doc.exists
 
     request_plus_id = request_doc.to_dict()
     request_plus_id.update({"id": request_doc.id})
