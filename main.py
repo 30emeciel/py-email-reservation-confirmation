@@ -46,7 +46,9 @@ def trigger_on_update_reservation_request(doc_path):
     pax_doc, request_doc = pax_ref.get(), request_ref.get()
     assert pax_doc.exists and request_doc.exists
 
-    request = DotMap((request_doc.to_dict() | {"id": request_doc.id}), _dynamic=False)
+    request_plus_id = request_doc.to_dict()
+    request_plus_id.update({"id": request_doc.id})
+    request = DotMap(request_plus_id, _dynamic=False)
     pax = DotMap(pax_doc.to_dict(), _dynamic=False)
     if request.state != "CONFIRMED":
         log.info(f"request 'state' != CONFIRMED, ignoring")

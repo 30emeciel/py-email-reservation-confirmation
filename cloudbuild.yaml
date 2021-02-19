@@ -12,6 +12,7 @@ steps:
     - --entry-point=from_firestore
     - --runtime=python38
     - --memory=128
+    - --retry
     - --trigger-event=providers/cloud.firestore/eventTypes/document.update
     - --trigger-resource=projects/trentiemeciel/databases/(default)/documents/pax/{paxId}/requests/{requestId}
     
