@@ -1,4 +1,5 @@
 import logging
+import os
 
 import firebase_admin
 from dotmap import DotMap
@@ -14,6 +15,8 @@ cred = credentials.ApplicationDefault()
 firebase_admin.initialize_app(cred, {
     'projectId': "trentiemeciel",
 })
+
+logging.basicConfig(level=os.environ.get("LOGGING_LEVEL", "INFO"))
 
 log = logging.getLogger(__name__)
 db = firestore.client()
