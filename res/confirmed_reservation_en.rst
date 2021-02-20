@@ -4,8 +4,12 @@ Title
 
 |image0|
 
-Merci pour votre réservation
-Veuillez trouver ci-dessous tous les détails de votre réservation
+
+You are confirmed for at the Coliving @ 30ème Ciel 🌈😀!
+
+
+
+Here some logistics information :
 
 
 RESERVATION NUMBER: 160501
