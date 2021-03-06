@@ -62,9 +62,8 @@ Si tu souhaites modifier ta réservation, suis ce lien `Gérer mes réservations
 
 📞 Parlons :)
 ========================================================================================================================
-Si c'est ton premier événement et si tu as des questions, si tu te demandes si cet événement est fait pour toi, ou si tu veux juste parler, appel moi :)
+Si c'est ton premier événement et si tu as des questions, si tu te demandes si cet événement est fait pour toi, ou si tu veux juste parler, n'hésites pas à nous contacter par `Messenger <m.me/30emeCiel>`_  ou par e-mail `admin@30emeciel.fr <mailto:admin@30emeciel.fr>`_  :)
 
-Tu peux me joindre sur mon téléphone au 07 69 28 12 82, sur Whatsapp ou sur Facebook/Messenger https://www.facebook.com/alyosha.leveski/.
 
 
 A bientôt ❤
