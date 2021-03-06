@@ -1,16 +1,16 @@
 from datetime import date
 
-from dotmap import DotMap
+from box import Box
 
 from mail import send_mail
 from rst import generate_confirmed_reservation_html_text
 
 
 def func_test_rst_mail():
-    pax = DotMap({
+    pax = Box({
         "name": "Hello"
-    }, _dynamic=False)
-    request = DotMap({
+    })
+    request = Box({
         "id": "my_id",
         "created": date(2021, 2, 6),
         "kind": "COLIVING",
@@ -18,7 +18,7 @@ def func_test_rst_mail():
         "departure_date": date(2021, 3, 1),
 
         "number_of_nights": 3,
-    }, _dynamic=False)
+    })
 
     html = generate_confirmed_reservation_html_text(pax, request)
     send_mail("tony.lbvre@gmail.com", "Test Reservation Mail", html)
