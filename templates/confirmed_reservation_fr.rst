@@ -1,9 +1,7 @@
-.. image:: https://www.30emeciel.fr/wp-content/uploads/2021/02/DSC_9396-scaled.jpg
-    :width: 750px
-    :height: 501px
+{% extends "email_base.rst" %}
+{% block title %}{% include 'confirmed_reservation_title_fr.txt' %}{% endblock %}
 
-{% include 'confirmed_reservation_title_fr.txt' %}
-************************************************************************************************************************
+{% block content %}
 
 :Nom:
     {{ pax.name }}
@@ -27,7 +25,7 @@ Quelques informations pour ta venue
 ************************************************************************************************************************
 
 
-🏡 Adresse
+Adresse
 ========================================================================================================================
 
 | 16 rue Vandrezanne
@@ -36,7 +34,7 @@ Quelques informations pour ta venue
 | Montes au 30ème puis dirige-toi vers la porte à gauche numéro 3.03
 
 
-📡 Wifi
+Wifi
 ========================================================================================================================
 
 :SID:
@@ -44,29 +42,29 @@ Quelques informations pour ta venue
 :Mdp:
     clitoris
 
-👨‍❤️‍👨 Rejoindre la communauté des colivers du 30ème Ciel
+Rejoindre la communauté des colivers du 30ème Ciel
 ========================================================================================================================
 
-Nous avons un groupe privé Facebook, tu peux le rejoindre en suivant ce lien :
+Tu peux rejoindre le groupe Whatsapp privé des Colivers du 30ème Ciel :
+https://chat.whatsapp.com/IQaf7xSSEQAIIwrBX9j8sK
+Tu ne peux rejoindre dans cette conversion que pendant ta présence au 30ème Ciel et jusqu'à deux semaines après ton dernier jour.
+
+Le reste du temps, tu peux communiquer sur le groupe privé Facebook, que tu peux le rejoindre en suivant ce lien :
 https://www.facebook.com/groups/au30emeciel
 
-💶 Contribuer
+Contribuer
 ========================================================================================================================
 
 Tu vas recevoir à la fin de ton passage un e-mail t'invitant si tu souhaites contribuer au projet.
 
 
-🎢 Rapid changing reality
+Changement de dernières minutes ?
 ========================================================================================================================
-Si tu souhaites modifier ta réservation, suis ce lien `Gérer mes réservations <https://www.30emeciel.fr>`_.
-
-📞 Parlons :)
-========================================================================================================================
-Si c'est ton premier événement et si tu as des questions, si tu te demandes si cet événement est fait pour toi, ou si tu veux juste parler, n'hésites pas à nous contacter par `Messenger <m.me/30emeCiel>`_  ou par e-mail `admin@30emeciel.fr <mailto:admin@30emeciel.fr>`_  :)
+Si tu souhaites modifier ta réservation, suis ce lien `Gérer mes réservations <https://coliv.30emeciel.fr/my-reservations>`_.
 
 
 
-A bientôt ❤
 
+{% endblock %}
 
 
