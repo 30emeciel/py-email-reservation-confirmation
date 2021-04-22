@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "trigger-on-update-reservation-request"
+name = "email-reservation-confirmation"
 version = "1.0.0"
 description = ""
 authors = ["Alyosha <alyosha@30emeciel.fr>"]
@@ -10,7 +10,7 @@ core = { git = "https://github.com/30emeciel/py-core.git", branch="v2"}
 python-box = "^5.3.0"
 
 [tool.poetry.dev-dependencies]
-python-dotenv = "^0.15.0"
+python-dotenv = "^0.17.0"
 pytest = "^6.2.3"
 pytest-mockito = "^0.0.4"
 
