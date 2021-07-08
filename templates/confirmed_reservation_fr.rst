@@ -31,8 +31,17 @@ Adresse
 | 16 rue Vandrezanne
 | Tour Jade
 | Utilises l'interphone de droite et tape le code "A303".
-| Montes au 30ème puis dirige-toi vers la porte à gauche numéro 3.03
+| Montes au 30ème puis dirige-toi vers la porte à gauche numéro 30.3
 
+
+Rejoindre la communauté du 30ème Ciel
+========================================================================================================================
+
+Tu peux rejoindre la communauté privé du 30ème Ciel sur Discord :
+https://discord.gg/eH5Xx7EPDu
+
+ou sur le groupe privé Facebook, que tu peux le rejoindre en suivant ce lien :
+https://www.facebook.com/groups/au30emeciel
 
 Wifi
 ========================================================================================================================
@@ -42,26 +51,10 @@ Wifi
 :Mdp:
     clitoris
 
-Rejoindre la communauté des colivers du 30ème Ciel
-========================================================================================================================
-
-Tu peux rejoindre le groupe Whatsapp privé des Colivers du 30ème Ciel :
-https://chat.whatsapp.com/IQaf7xSSEQAIIwrBX9j8sK
-Tu ne peux rejoindre dans cette conversion que pendant ta présence au 30ème Ciel et jusqu'à deux semaines après ton dernier jour.
-
-Le reste du temps, tu peux communiquer sur le groupe privé Facebook, que tu peux le rejoindre en suivant ce lien :
-https://www.facebook.com/groups/au30emeciel
-
-Contribuer
-========================================================================================================================
-
-Tu vas recevoir à la fin de ton passage un e-mail t'invitant si tu souhaites contribuer au projet.
-
 
 Changement de dernières minutes ?
 ========================================================================================================================
-Si tu souhaites modifier ta réservation, suis ce lien `Gérer mes réservations <https://coliv.30emeciel.fr/my-reservations>`_.
-
+Si tu souhaites modifier ta réservation, suis ce lien `Gérer mes réservations <https://coliv.30emeciel.fr/reservations>`_.
 
 
 

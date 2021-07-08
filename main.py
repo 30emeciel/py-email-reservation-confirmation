@@ -1,12 +1,14 @@
 import logging
 
 from box import Box
-from core.firestore_client import db
-from core.mail import send_mail
+from core import firestore_client
+from core.mailer import Mailer
 from core.rst_to_html import to_html
 from core.tpl import render
 
 log = logging.getLogger(__name__)
+mailer = Mailer()
+db = firestore_client.db()
 
 
 def from_firestore(event, context):
@@ -51,5 +53,5 @@ def trigger_on_update_reservation_request(doc_path, event):
     html = to_html(render("confirmed_reservation_fr.rst", data))
     title = render("confirmed_reservation_title_fr.txt", data)
 
-    send_mail(pax.email, title, html)
+    mailer.send_mail(pax.name, pax.email, title, html)
 
